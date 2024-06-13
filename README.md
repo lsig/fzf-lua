@@ -607,6 +607,9 @@ require'fzf-lua'.setup {
     -- These override the default tables completely
     -- no need to set to `false` to disable a bind
     -- delete or modify is sufficient
+
+    -- When defining keymap.builtin binds you must
+    -- use neovim-style keymaps (i.e. <C-c>)
     builtin = {
       -- neovim `:tmap` mappings for the fzf win
       ["<F1>"]        = "toggle-help",
